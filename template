@@ -1,0 +1,26 @@
+import { random } from "../random.js";
+import { lista_all } from "../sentences.js";
+
+export let by_ing = [
+  
+];
+
+document.getElementById('by_ing').addEventListener("click", (e) => {
+  let btn_test = document.getElementById("by_ing");
+  if (!lista_all.includes(by_ing)) {
+    lista_all.push(by_ing);
+    console.log(btn_test);
+    btn_test.style.backgroundColor = "red";
+  } else {
+    const index = lista_all.indexOf(by_ing);
+    if (index !== -1) {
+      lista_all.splice(index, 1);
+    }
+    btn_test.style.backgroundColor = "blue";
+  }
+
+  console.log(lista_all);
+});
+
+
+// source http://original.ompersonal.com.ar/ADVANCED/unit1/page5.htm

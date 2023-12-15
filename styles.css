@@ -1,0 +1,15 @@
+.check,
+.check  * {
+  border: 1px solid white;
+}
+
+
+#tabla_tiempos {
+  display: grid;
+  /* grid-template-columns: repeat( auto-fit,minmax( min(350px, 100%) ,1fr) ); */
+  grid-template-columns: repeat( 4, 1fr  );
+  justify-content: center;
+  justify-items: center;
+  gap: 30px;
+
+}
